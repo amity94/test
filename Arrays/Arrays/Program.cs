@@ -10,8 +10,9 @@ namespace arrays
     {
         static void Main(string[] args)
         {
-            int[] arraya = new[] { 8, 7, -1, 4 };
-            int[] arrayb = new[] { 3, 10, };
+            int[] arraya, arrayb;
+            arraya = new[] { 8, 7, -1, 4 };
+            arrayb = new[] { 3, 10, };
             Console.WriteLine(comparearrays(ref arraya, ref arrayb));
 
             Random r = new Random();
@@ -20,8 +21,8 @@ namespace arrays
             arrayb = new int[size];
             for (int i = 0; i < size; i++)
             {
-                arraya[i] = r.Next(5);
-                arrayb[i] = r.Next(5);
+                arraya[i] = r.Next(10);
+                arrayb[i] = r.Next(10);
             }
 
             for (int i = 0; i < arraya.Length; i++)
